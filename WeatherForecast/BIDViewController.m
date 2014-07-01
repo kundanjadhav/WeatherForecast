@@ -159,7 +159,8 @@
             UIAlertView *alert= [[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Invalid city", @"No Internet") message:NSLocalizedString(@"Please check entered city name", @"Internet connection problem") delegate:self cancelButtonTitle:NSLocalizedString(@"Okay", @"Okay")  otherButtonTitles:nil];
             [alert show];
             
-
+            [HUD hide:YES];
+            [HUD removeFromSuperViewOnHide];
             }
         
         else
